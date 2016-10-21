@@ -8,7 +8,7 @@ class CarouselVideos extends Component{
               {this.props.videos.map((el,index)=>{
                 return (
                   <div key={index}>
-                      <iframe width="800" height="450" src={el} allowFullScreen />
+                      <iframe width="800" height="450" src={el+'?badge=0&portrait=0&byline=0'} allowFullScreen />
                   </div>
                 )
               })}
@@ -19,7 +19,7 @@ class CarouselVideos extends Component{
 
 CarouselVideos.defaultProps = {
   videos: [
-    'https://player.vimeo.com/video/188184881',
+    'https://player.vimeo.com/video/188184881?autoplay=1',
     'https://player.vimeo.com/video/188184884',
     'https://player.vimeo.com/video/188184882',
     'https://player.vimeo.com/video/188184880'
