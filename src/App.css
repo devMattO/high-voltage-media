@@ -52,6 +52,13 @@ body{
   border-bottom: 1px solid #999;
   padding-bottom: 16px;
   font-size: 2em;
+  text-decoration: none;
+  color: white;
+}
+
+.header-link{
+  color: white;
+  text-decoration: none;
 }
 
 .App-intro {
