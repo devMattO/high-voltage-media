@@ -5,8 +5,7 @@ class AppHeader extends Component {
   render() {
     return (
       <div className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>High Voltage Media</h2>
+        <h2 className="page-header" >High Voltage Media</h2>
       </div>
     )
   }

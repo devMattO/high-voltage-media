@@ -5,13 +5,13 @@ class CarouselVideos extends Component{
     render() {
         return (
             <Carousel showThumbs={false}>
-            {this.props.videos.map((el,index)=>{
-              return (
-                <div key={index}>
-                    <iframe width="1600" height="450" src={el} allowFullScreen />
-                </div>
-              )
-            })}
+              {this.props.videos.map((el,index)=>{
+                return (
+                  <div key={index}>
+                      <iframe width="800" height="450" src={el} allowFullScreen />
+                  </div>
+                )
+              })}
             </Carousel>
         )
     }
