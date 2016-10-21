@@ -106,7 +106,33 @@ body{
   background: rgba(0, 0, 0, 0.3);
 }
 
+.menu-item{
+  text-decoration: none;
+  color: white;
+  padding: inherit;
+  font-size: 27px;
+}
+
+.menu-item:hover{
+  color: black;
+}
+
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 474px){
+  .video-wrapper{
+    height: 300px;
+  }
 }
