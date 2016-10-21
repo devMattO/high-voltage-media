@@ -1,4 +1,4 @@
-.video-carousel {
+.main-video {
   margin: 0 auto;
   padding: 40px;
   width: 60%;
@@ -8,5 +8,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.content-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
 }
 
