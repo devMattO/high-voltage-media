@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
+  height: 400px;
 }
 
 /********************************************
@@ -338,3 +339,31 @@ button {
 h5 {
   margin-bottom: 10px; }
 
+.embed-container {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.embed-container iframe {
+  height: 100%;
+  width: 710px;
+}
+
+@media only screen and (max-width: 900px){
+  .embed-container iframe {
+    height: 100%;
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .embed-container iframe {
+    height: 100%;
+    width: 250px;
+  }
+  .content-container{
+    height: 150px;
+    margin-top: 75px;
+  }
+}

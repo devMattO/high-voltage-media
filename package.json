@@ -11,6 +11,8 @@
     "react-addons-css-transition-group": "^15.3.2",
     "react-burger-menu": "^1.10.8",
     "react-dom": "^15.3.2",
+    "react-dragula": "^1.1.17",
+    "react-html-email": "^1.1.2",
     "react-responsive-carousel": "^3.0.21",
     "react-router": "^2.8.1",
     "react-slick": "^0.14.5",
