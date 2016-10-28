@@ -46,7 +46,6 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 75px;
 }
 
 .page-header{
@@ -161,6 +160,12 @@ body{
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 650px){
+  .App-header{
+    padding-top: 75px;
+  }
 }
 
 @media only screen and (max-width: 474px){
