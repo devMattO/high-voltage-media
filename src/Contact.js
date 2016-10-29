@@ -13,6 +13,11 @@ class Contact extends Component {
           <div id="god-container">
             <AppHeader />
             <div>Contact</div>
+            <form id="MySelector">
+              <input type="text" name="givenname" placeholder="Name" />
+              <input type="email" name="inputexample" placeholder="Email" />
+              <input type="submit" />
+            </form>
           </div>
         </main>
       </div>

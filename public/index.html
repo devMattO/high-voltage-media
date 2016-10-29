@@ -28,5 +28,17 @@
       To begin the development, run `npm start`.
       To create a production bundle, use `npm run build`.
     -->
+    <script  src="http://src.fireform.org/fireform.min.js"></script>
+      <script>
+          options={
+            emailNotification:"olsen_matthew@yahoo.com",
+            emailConfirmationName:"InputName",  //The form input we get the email from.
+            emailConfirmationFrom:"olsen_matthew@yahoo.com",  //Email appears as sent by this address.
+            emailConfirmationSubject:"Thanks for signing up",
+            emailConfirmationBodyHTML:"<p>You have been signed up!</p>",
+            emailConfirmationBodyText:"You have been signed up!"
+          }
+          new Fireform('#MySelector', 'http://fireform.org/list/82b5b780-95a3-4fbb-804e-922dc78e7af6/Contact', options);
+      </script>
   </body>
 </html>
