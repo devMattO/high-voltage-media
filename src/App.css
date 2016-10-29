@@ -95,7 +95,6 @@ body{
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
-  width: 100% !important;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -157,14 +156,39 @@ body{
   filter: alpha(opacity=20);
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.sm-contact{
+  display: flex;
+  height: 50px;
+  width: 125px;
+  align-self: flex-end;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.imgTagLogos{
+  height: 25px;
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
+.imgTagLogos:hover {
+  height: 25px;
+  filter: grayscale(0%);
+}
+
+.bm-burger-button button{
+  cursor: pointer;
+}
+
+.bm-cross-button button{
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 650px){
   .App-header{
-    padding-top: 75px;
+    margin-top: 55px;
+    width: 80%;
   }
 }
 
