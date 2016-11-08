@@ -12,7 +12,7 @@ ReactDOM.render(
     <Route path="/" component={Root}>
       <IndexRoute component={App} />
       <Route path="/about-us" component={AboutUs} />
-      <Route path="/contact" component={Contact} />
+      <Route path="/work" component={Contact} />
     </Route>
   </Router>,
   document.getElementById('root')

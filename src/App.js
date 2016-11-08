@@ -21,6 +21,7 @@ class App extends Component {
               <AppHeader />
               <LandingPageContent />
             </div>
+            <div className="footer"><a className="build-creds" target="_blank" href="https://devmatto.com">site by devmatto</a></div>
           </main>
         </ReactCSSTransitionGroup>
       </div>
