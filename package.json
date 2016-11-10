@@ -16,7 +16,8 @@
     "react-responsive-carousel": "^3.0.21",
     "react-router": "^2.8.1",
     "react-slick": "^0.14.5",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "vimeo": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

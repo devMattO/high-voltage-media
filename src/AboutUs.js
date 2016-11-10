@@ -6,16 +6,21 @@ import ContactBar from './sm-contact-bar.js'
 class AboutUs extends Component {
   onData ( data ) {
     let someStuff = data.target.response
+    console.log(someStuff,'<----someStuff');
     const dude = JSON.stringify(data.currentTarget.response)
-    this.setState({
-      data: dude
-    })
   }
   componentDidMount () {
-    let oReq = new XMLHttpRequest();
+    let oReq = new XMLHttpRequest()
       oReq.addEventListener("load", this.onData);
-      oReq.open("GET", "https://api.vimeo.com/oauth/access_token")
-      oReq.send();
+      oReq.open("GET", "https://api.vimeo.com/users/highvoltagemedia/videos")
+      oReq.setRequestHeader(
+        'Content-Type',
+        'application/json'
+      )
+      oReq.setRequestHeader(
+        'Authorization', 'Bearer 96c94f7207e555824aeff93d9035c29a'
+      )
+      oReq.send()
   }
   render() {
     return (
