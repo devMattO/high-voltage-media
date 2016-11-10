@@ -6,8 +6,8 @@ import ContactBar from './sm-contact-bar.js'
 class AboutUs extends Component {
   onData ( data ) {
     let someStuff = data.target.response
-    console.log(someStuff,'<----someStuff');
-    const dude = JSON.stringify(data.currentTarget.response)
+    const dude = JSON.parse(data.currentTarget.response)
+    console.log(dude,'<----someStuff');
   }
   componentDidMount () {
     let oReq = new XMLHttpRequest()
