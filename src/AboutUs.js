@@ -4,12 +4,18 @@ import BurgerMenu from './burger-menu.js'
 import ContactBar from './sm-contact-bar.js'
 
 class AboutUs extends Component {
-  onData ( data ) {
-    let someStuff = data.target.response
-    const dude = JSON.parse(data.currentTarget.response)
-    console.log(dude,'<----someStuff');
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      dude: {}
+    }
+    this.onData = this.onData.bind(this) //muy importante
   }
-  componentDidMount () {
+  onData ( data ) {
+    this.state.dude = JSON.parse(data.currentTarget.response)
+  }
+  componentWillMount () {
     let oReq = new XMLHttpRequest()
       oReq.addEventListener("load", this.onData);
       oReq.open("GET", "https://api.vimeo.com/users/highvoltagemedia/videos")
@@ -30,6 +36,8 @@ class AboutUs extends Component {
           <ContactBar />
           <AppHeader />
         </main>
+        {console.log(this,'<----this')}
+        <iframe src='https://player.vimeo.com/video/189245456?autoplay=1' frameBorder='0' allowFullScreen></iframe>
       </div>
     )
   }

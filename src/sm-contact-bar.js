@@ -10,8 +10,8 @@ class ContactBar extends Component {
       <div className="sm-contact">
       {this.props.sm_icons.map((el,index)=>{
         return(
-          <div className="sm-icon-container">
-            <a target="_blank" href={el.url} key={index}>
+          <div className="sm-icon-container" key={index}>
+            <a target="_blank" href={el.url} >
               <img role="presentation" src={el.logo} className='imgTagLogos' />
             </a>
           </div>
