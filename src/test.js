@@ -3,8 +3,10 @@ import { Carousel } from 'react-responsive-carousel'
 
 class CarouselVideos extends Component{
     render() {
+      const bruh = this.props.money
         return (
             <Carousel showThumbs={false}>
+              {console.log(bruh.data,'this')}
               {this.props.videos.map((el,index)=>{
                 return (
                   <div className="video-container" key={index}>

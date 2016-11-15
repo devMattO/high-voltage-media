@@ -2,20 +2,25 @@ import React, { Component } from 'react'
 import AppHeader from './App-Header.js'
 import BurgerMenu from './burger-menu.js'
 import ContactBar from './sm-contact-bar.js'
+import CarouselVideos from './test.js'
 
 class AboutUs extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      dude: {}
+      peace: []
     }
     this.onData = this.onData.bind(this) //muy importante
   }
   onData ( data ) {
-    this.state.dude = JSON.parse(data.currentTarget.response)
+    const parsedVimeoData = JSON.parse(data.currentTarget.response).data
+    console.log(parsedVimeoData[0].uri.slice(8),'<----parsedVimeoData');
+    this.setState({peace: parsedVimeoData.map((el, index)=>{
+              return (`https://player.vimeo.com/video/${el.uri.slice(8)}?badge=0&portrait=0&byline=0`)
+            })})
   }
-  componentWillMount () {
+  componentDidMount () {
     let oReq = new XMLHttpRequest()
       oReq.addEventListener("load", this.onData);
       oReq.open("GET", "https://api.vimeo.com/users/highvoltagemedia/videos")
@@ -36,8 +41,13 @@ class AboutUs extends Component {
           <ContactBar />
           <AppHeader />
         </main>
-        {console.log(this,'<----this')}
-        <iframe src='https://player.vimeo.com/video/189245456?autoplay=1' frameBorder='0' allowFullScreen></iframe>
+        <div className="videos-wrapper">
+          {this.state.peace.map((el, index)=>{
+            return (
+              <iframe key={index} src={el} frameBorder='0' allowFullScreen></iframe>
+            )
+          })}
+        </div>
       </div>
     )
   }
