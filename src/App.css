@@ -199,6 +199,44 @@ body{
   margin: 10px;
 }
 
+.videos-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.videos-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.frame-style{
+  width: 600px;
+  height: 346px;
+  margin: 10px;
+}
+
+.about-us-container{
+  width: 100%;
+  height: 400px;
+  background-color: gray;
+}
+.polaroid-container{
+  width: 25%;
+  height: 350px;
+  background-color: whitesmoke;
+}
+.image-container{
+  width: 80%;
+  height: 300px;
+  background-color: magenta;
+}
+
 @media only screen and (max-width: 650px){
   .App-header{
     margin-top: 55px;

@@ -3,7 +3,7 @@ import AppHeader from './App-Header.js'
 import BurgerMenu from './burger-menu.js'
 import ContactBar from './sm-contact-bar.js'
 
-class AboutUs extends Component {
+class VimeoRequest extends Component {
   constructor(props) {
     super(props)
 
@@ -40,10 +40,13 @@ class AboutUs extends Component {
           <ContactBar />
           <AppHeader />
         </main>
-        <div className="about-us-container">
-          <div className="polaroid-container">
-            <div className="image-container">
-            </div>
+        <div className="videos-container">
+          <div className="videos-wrapper">
+            {this.state.peace.map((el, index)=>{
+              return (
+                <iframe className="frame-style" key={index} src={el} frameBorder='0' allowFullScreen></iframe>
+              )
+            })}
           </div>
         </div>
       </div>
@@ -51,4 +54,4 @@ class AboutUs extends Component {
   }
 }
 
-export default AboutUs
+export default VimeoRequest

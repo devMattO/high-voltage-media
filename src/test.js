@@ -10,7 +10,7 @@ class CarouselVideos extends Component{
               {this.props.videos.map((el,index)=>{
                 return (
                   <div className="video-container" key={index}>
-                      <iframe width="1200" height="475" src={el+'?badge=0&portrait=0&byline=0'} allowFullScreen />
+                      <iframe width="1200" height="475" src={`${el}?badge=0&portrait=0&byline=0`} allowFullScreen />
                   </div>
                 )
               })}
