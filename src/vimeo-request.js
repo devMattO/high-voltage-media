@@ -18,8 +18,6 @@ class VimeoRequest extends Component {
   }
   onData ( data ) {
     const parsedVimeoData = JSON.parse(data.currentTarget.response).data
-    console.log(parsedVimeoData[0].name,'<----parsedVimeoData');
-    console.log(parsedVimeoData[0].uri.slice(8),'<----parsedVimeoData');
     this.setState({
       peace: parsedVimeoData.map((el, index)=>{
               return (`https://player.vimeo.com/video/${el.uri.slice(8)}?badge=0&portrait=0&byline=0`)
@@ -48,14 +46,13 @@ class VimeoRequest extends Component {
           <ContactBar />
           <div className="App-header">
             <RadiumLink className="header-link" to="/">
-              <h2 className="page-header fade-in one" >HVM | Work</h2>
+              <h2 className="page-header fade-in one">HVM | Work</h2>
             </RadiumLink>
           </div>
         </main>
         <div className="videos-container">
           <div className="videos-wrapper">
             {this.state.data.map((el, index)=>{
-              console.log(el)
               return (
                 <div className="content-wrap" key={index}>
                   <div className="iframe-wrap">
