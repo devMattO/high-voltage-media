@@ -44,7 +44,9 @@ class VimeoRequest extends Component {
           <div className="videos-wrapper">
             {this.state.peace.map((el, index)=>{
               return (
-                <iframe className="frame-style" key={index} src={el} frameBorder='0' allowFullScreen></iframe>
+                <div className="iframe-wrap">
+                  <iframe className="frame-style" key={index} src={el} frameBorder='0' allowFullScreen></iframe>
+                </div>
               )
             })}
           </div>

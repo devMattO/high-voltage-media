@@ -5,7 +5,6 @@ import App from './App';
 import Root from './Root.js';
 import AboutUs from './AboutUs.js'
 import VimeoRequest from './vimeo-request.js'
-import Contact from './Contact.js'
 import './index.css';
 
 ReactDOM.render(
