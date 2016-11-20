@@ -46,7 +46,7 @@ class VimeoRequest extends Component {
           <ContactBar />
           <div className="App-header">
             <RadiumLink className="header-link" to="/">
-              <h2 className="page-header fade-in one">HVM | Work</h2>
+              <h2 className="page-header fade-in one">HVM | work</h2>
             </RadiumLink>
           </div>
         </main>

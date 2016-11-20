@@ -45,6 +45,10 @@ class AboutUs extends Component {
             <div className="image-container">
             </div>
           </div>
+          <div className="polaroid-container">
+            <div className="image-container">
+            </div>
+          </div>
         </div>
       </div>
     )

@@ -5,7 +5,7 @@ class LandingPageContent extends Component {
     return (
       <div className="content-container">
         <div className="embed-container">
-          <iframe src='https://player.vimeo.com/video/189245456?autoplay=1' frameBorder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          <iframe src='https://player.vimeo.com/video/188717942?autoplay=1' frameBorder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
       </div>
     )
