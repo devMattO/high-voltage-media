@@ -11,7 +11,7 @@ export default React.createClass({
       <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
         <RadiumLink className="menu-item" to="/">Home</RadiumLink>
         <RadiumLink className="menu-item" to="/work">Work</RadiumLink>
-        <RadiumLink className="menu-item" to="/about-us">About Us</RadiumLink>
+        <RadiumLink className="menu-item" to="/about">About</RadiumLink>
       </Menu>
     );
   }

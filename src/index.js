@@ -11,7 +11,7 @@ ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={Root}>
       <IndexRoute component={App} />
-      <Route path="/about-us" component={AboutUs} />
+      <Route path="/about" component={AboutUs} />
       <Route path="/work" component={VimeoRequest} />
     </Route>
   </Router>,
