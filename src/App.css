@@ -225,7 +225,7 @@ body{
 .image-container{
   width: 80%;
   height: 300px;
-  background-color: magenta;
+  background-color: black;
 }
 
 @media only screen and (max-width: 650px){

@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
-import AppHeader from './App-Header.js'
 import BurgerMenu from './burger-menu.js'
 import ContactBar from './sm-contact-bar.js'
+import { Link } from 'react-router'
+import Radium from 'radium'
+
+let RadiumLink = Radium(Link)
 
 class AboutUs extends Component {
   render() {
@@ -10,7 +13,11 @@ class AboutUs extends Component {
         <BurgerMenu />
         <main id="page-wrap">
           <ContactBar />
-          <AppHeader />
+          <div className="App-header">
+            <RadiumLink className="header-link" to="/">
+              <h2 className="page-header fade-in one">HVM | about</h2>
+            </RadiumLink>
+          </div>
         </main>
         <div className="about-us-container">
           <div className="polaroid-container">

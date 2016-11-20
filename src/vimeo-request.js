@@ -20,7 +20,7 @@ class VimeoRequest extends Component {
     const parsedVimeoData = JSON.parse(data.currentTarget.response).data
     this.setState({
       peace: parsedVimeoData.map((el, index)=>{
-              return (`https://player.vimeo.com/video/${el.uri.slice(8)}?badge=0&portrait=0&byline=0`)
+              return (`https://player.vimeo.com/video/${el.uri.slice(8)}`)
       }),
       data: parsedVimeoData
     })
