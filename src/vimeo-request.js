@@ -49,24 +49,24 @@ class VimeoRequest extends Component {
               <h2 className="page-header fade-in one">HVM | work</h2>
             </RadiumLink>
           </div>
-        </main>
-        <div className="videos-container">
-          <div className="videos-wrapper">
-            {this.state.data.map((el, index)=>{
-              return (
-                <div className="content-wrap" key={index}>
-                  <div className="iframe-wrap">
-                    <iframe className="frame-style" src={`https://player.vimeo.com/video/${el.uri.slice(8)}?badge=0&portrait=0&byline=0`} frameBorder='0' allowFullScreen></iframe>
+          <div className="videos-container">
+            <div className="videos-wrapper">
+              {this.state.data.map((el, index)=>{
+                return (
+                  <div className="content-wrap" key={index}>
+                    <div className="iframe-wrap">
+                      <iframe className="frame-style" src={`https://player.vimeo.com/video/${el.uri.slice(8)}?badge=0&portrait=0&byline=0`} frameBorder='0' allowFullScreen></iframe>
+                    </div>
+                    <div className="title-n-desc">
+                      <h3>{el.name}</h3>
+                      <p>{el.description}</p>
+                    </div>
                   </div>
-                  <div className="title-n-desc">
-                    <h3>{el.name}</h3>
-                    <p>{el.description}</p>
-                  </div>
-                </div>
-              )
-            })}
+                )
+              })}
+            </div>
           </div>
-        </div>
+        </main>
       </div>
     )
   }
