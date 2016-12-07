@@ -1,6 +1,7 @@
 {
   "name": "high-voltage-media",
   "version": "0.1.0",
+  "homepage": "http://highvoltagemedia.tv",
   "private": true,
   "devDependencies": {
     "react-scripts": "0.6.1"
