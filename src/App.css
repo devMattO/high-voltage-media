@@ -122,29 +122,59 @@ body{
   margin: 10px;
 }
 
-.about-us-container{
+.about-us-wrapper{
+  display: flex;
   width: 100%;
-  height: 400px;
-  background-color: gray;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.about-us-container{
+  width: 70%;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 .polaroid-container{
-  width: 25%;
+  width: 174px;
   height: 350px;
-  background-color: whitesmoke;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 50px;
+  border-radius: 10px;
 }
 
 .image-container{
   width: 80%;
   height: 300px;
-  background-color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img{
+  max-height: 100%;
+  box-shadow: inset 0 0 5px blue, 0 0 5px black;
+  border-radius: 5px;
+}
+
+.about-jack{
+  width: 390px;
+  line-height: 31px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: large;
+}
+
+.about-dillon{
+  width: 390px;
+  line-height: 31px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: large;
 }
 
 @media only screen and (max-width: 650px){
@@ -155,10 +185,16 @@ body{
   .build-creds{
     display: none;
   }
+  #outer-container{
+    height: 668px;
+  }
 }
 
 @media only screen and (max-width: 474px){
   .video-wrapper{
     height: 300px;
+  }
+  #outer-container{
+    height: 668px;
   }
 }
