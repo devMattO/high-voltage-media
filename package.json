@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "flightplan": "^0.6.15",
     "react-scripts": "0.6.1"
   },
   "dependencies": {
