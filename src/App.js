@@ -9,7 +9,7 @@ import './App.css'
 class App extends Component {
   render() {
     return (
-      <div id="outer-container">
+      <div id="outer-container" className="mahPlug">
         <ReactCSSTransitionGroup
                   transitionName="example"
                   transitionAppear={true}

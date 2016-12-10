@@ -195,6 +195,24 @@ body{
     height: 300px;
   }
   #outer-container{
-    height: 668px;
+    height: 100%;
+  }
+  .content-wrap{
+    width: 300px;
+    height: 275px;
+  }
+  .frame-style{
+    width: 245px;
+    height: 140px;
+  }
+  .title-n-desc p{
+    display: none;
+  }
+  #outer-container{
+    height: 100%;
+  }
+  .mahPlug{
+    border: 14px solid #373a47;
+    height: 736px !important;
   }
 }
